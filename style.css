@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#container {
+  position: relative;
+}
+
+#ball {
+  width: 300px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#smoke {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2;
+  transition: opacity 0.5s ease;
+}
