@@ -4,33 +4,32 @@
   <style>
     body {
       margin: 0;
-      background: url('home.png') no-repeat center top;
+      background: url('home.jpg') no-repeat center top;
       background-size: cover;
       height: 100vh;
     }
 
     input {
       position: absolute;
-      top: 43%;   /* adjust slightly if needed */
+      top: 43%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 60%;
-      max-width: 500px;
-      height: 40px;
+      width: 65%;
+      max-width: 520px;
+      height: 45px;
 
       border: none;
       outline: none;
       background: transparent;
 
       font-size: 18px;
-      text-align: left;
-      padding-left: 15px;
+      padding-left: 20px;
     }
   </style>
 </head>
 <body>
 
-<input type="text" id="search" autofocus placeholder="" onkeydown="search(event)">
+<input type="text" id="search" autofocus onkeydown="search(event)">
 
 <script>
 function search(event) {
