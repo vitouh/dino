@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      background: url('home.png') no-repeat center top;
+      background-size: cover;
+      height: 100vh;
+    }
+
+    input {
+      position: absolute;
+      top: 43%;   /* adjust slightly if needed */
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60%;
+      max-width: 500px;
+      height: 40px;
+
+      border: none;
+      outline: none;
+      background: transparent;
+
+      font-size: 18px;
+      text-align: left;
+      padding-left: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<input type="text" id="search" autofocus placeholder="" onkeydown="search(event)">
+
+<script>
+function search(event) {
+  if (event.key === "Enter") {
+    let value = document.getElementById("search").value.toLowerCase().trim();
+
+    if (value === "fidelio") {
+      window.location.href = "access.html";
+    } else {
+      window.location.href = "error.html";
+    }
+  }
+}
+</script>
+
+</body>
+</html>
