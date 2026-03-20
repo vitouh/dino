@@ -3,12 +3,12 @@ const smoke = document.getElementById("smoke");
 const sound = document.getElementById("smokeSound");
 
 const results = [
-  "ballwithtext1.png",
-  "ballwithtext2.png",
-  "ballwithtext3.png",
-  "ballwithtext4.png",
-  "ballwithtext5.png",
-  "ballwithtext6.png"
+  "IMG_3406.png",
+  "IMG_3405.png",
+  "IMG_3404.png",
+  "IMG_3403.png",
+  "IMG_3402.png",
+  "IMG_3401.png"
 ];
 
 let showingResult = false;
@@ -22,13 +22,13 @@ ball.addEventListener("click", () => {
 
   setTimeout(() => {
     if (!showingResult) {
-      // random crystal ball
+      // random crystal ball with text
       const randomBall = results[Math.floor(Math.random() * results.length)];
       ball.src = randomBall;
       showingResult = true;
     } else {
       // go back to normal
-      ball.src = "ball.jpg";
+      ball.src = "ball.PNG";
       showingResult = false;
     }
   }, 500);
